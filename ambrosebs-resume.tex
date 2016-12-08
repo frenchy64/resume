@@ -1,0 +1,330 @@
+% LaTeX source of my resume
+% =========================
+
+% Commented for easy reuse... ;)
+
+% See the `README.md` file for more info.
+
+% This file is licensed under the CC-NC-ND Creative Commons license.
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Ambrose Bonnaire-Sergeant}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:abonnairesergeant.at.gmail.dot.com}{abonnairesergeant\mbox{}[at]\mbox{}gmail.com}\sbull
+%\textsmaller{+}31.646469087\sbull
+\href{http://ambrosebs.com/}{ambrosebs.com}\sbull
+\href{https://github.com/frenchy64}{github.com/frenchy64}
+\\
+Lindley Hall, Room 315\sbull
+150 S Woodlawn Ave \sbull
+Bloomington \sbull 
+IN 47405 \sbull
+USA
+
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\noindent 
+\emph{Programming language tooling developer, bringing academia to the masses.}
+\\
+\\
+I love delivering tools and lessons from academia to working programmers.
+My work in building optional type systems has been incredibly
+rewarding, and fulfills a need of mine to make a real impact
+on other people's lives.
+
+My work on Typed Clojure is indicative of my approach.
+I created the optional type system for Clojure
+in 2011.
+Each subsequent year has taken a new direction
+based on the feedback of the community, using my 
+expertise to match solutions to problems.
+\\
+
+I love the communicating and marketing ideas.
+It is both rewarding and challenging.
+I have orchestrated crowdfunding campaigns that have
+collectively raised
+over \$50,000 to support my goals in open source 
+development---supported by companies like Cognitect, Walmart Labs, Prismatic,
+and CircleCI.
+\\
+
+I have given many talks in industry and academic conferences, including
+Strangeloop, Clojure Conj, Philly ETE, Lambda Jam Brisbane, Code
+Mesh, ESOP, and the International Lisp Conference.
+I also enjoy talking at local Clojure user groups.
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection
+  {{Research Assistant}}
+  {\textsc{Indiana University Bloomington}} {%
+  \headedsubsection
+    {Advisor: Sam Tobin-Hochstadt}
+    {Fall 2014 --- Summer 2015, Spring 2016 --- }
+    {\bodytext{
+        We have worked to formalise and publish a paper on the fundamentals
+        of Typed Clojure.
+        We are also working towards extending Typed Clojure with gradual typing.
+        More recently, we are developing a
+        framework to infer type annotations for optional type systems
+        based on \href{http://ambrosebs.com/auto-ann.html}{runtime instrumentation}.
+      }
+    }
+}
+
+\headedsection
+  {{Assistant Instructor}}
+  {\textsc{Indiana University Bloomington}} {%
+  \headedsubsection
+    {Instructor: Sam Tobin-Hochstadt}
+    {Fall 2015}
+    {\bodytext{Taught undergraduates C211, an introductory programming
+      language course based on How To Design Programs.
+    Conducted labs and office hours.}}
+}
+
+\headedsection
+  {\href{http://ambrosebs.com/\#gsoc}{Google Summer of Code}} {\textsc{Clojure organisation}} {
+  \headedsubsection
+    {Student} {2012, 2013}
+    {\bodytext{
+      I developed Typed Clojure, improving the support of
+      Clojure idioms, supporting more expressive types,
+      and adding documentation.
+      }
+    }
+    {}
+  \headedsubsection
+    {Mentor} {2014 (3 students), 2015 (2 students)}
+    {\bodytext{
+        I have mentored 5 projects, including several adding
+        advanced type system features to Typed Clojure,
+        and work towards a ClojureScript compiler using
+        tools.analyzer as a backend.
+      }}
+    {}
+  \headedsubsection
+    {Administrator} {2014, 2015}
+    {\bodytext{
+      My role as an administrator included proposing
+      projects, preparing and reviewing application documents,
+      and advertising for interested students.
+      }}
+    {}
+}
+
+\headedsection
+  {Crowdfunding for Open Source work}
+  {\textsc{Perth, Western Australia}} {%
+  \headedsubsection
+    {\href{https://www.indiegogo.com/projects/typed-clojure}{Typed Clojure}
+    %(\$35,254 USD raised by 545 backers)
+  }
+    {2013}
+    {\bodytext{
+      These funds helped support me as I worked on improving 
+      and extending Typed Clojure's type system.
+      \$5,000 of these funds were used to commission
+      further open source work on tools.analyzer, a
+      now-important Clojure library.
+    }}
+
+  \headedsubsection
+  {\href{https://www.indiegogo.com/projects/gradual-typing-for-clojure}{Gradual Typing for Clojure}
+    %(\$11,695 USD raised by 199 backers)
+  }
+    {2015}
+    {\bodytext{These funds helped me design a \emph{gradual typing} framework for Typed Clojure.
+      %which is still in development. 
+      It supports automatic contracts for
+      global variables based on the typed-untyped boundary, as well as allowing
+      arbitrary exporting of macros from typed namespaces---a shortcoming of previous systems.
+      }}
+
+  \headedsubsection
+  {\href{https://www.indiegogo.com/projects/typed-clojure-clojure-spec-auto-annotations}{Automatic
+    Annotations for Typed Clojure and clojure.spec}
+    %(\$8,621 USD raised by 69 backers)
+  }
+    {2016}
+    {\bodytext{
+      This campaign concentrated on automating the manual labour of type and spec annotations.
+      It helped me attend multiple industry conferences to meet real users
+      of Typed Clojure and clojure.spec to discuss the needs of the community.
+      }}
+}
+
+
+\headedsection
+  {Analyst Programmer}
+  {\textsc{University of Western Australia}} {
+  {2010-2011}
+  {\bodytext{
+    I worked with the UWA library staff to gather 
+    information on the format and location of various University research
+    data sources, and set up VIVO semantic web software. I used Java, XSLT,
+    and bash, and administered several Linux machines.
+}
+  }
+}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{http://www.indiana.edu}{Indiana University Bloomington}}
+  {\textsc{Bloomington, Indiana}} {%
+  \headedsubsection
+    {Computer Science PhD student (In progress)}
+    {Fall 2014 --}
+    {}
+}
+
+\headedsection
+  {\href{http://www.uwa.edu.au}{University of Western Australia}}
+  {\textsc{Western Australia, Australia}} {%
+  \headedsubsection
+    {BSc in Computer Science with Honours}
+    {2008 -- 2013}
+    {}
+}
+
+\roottitle{Research Groups}
+
+\headedsection
+  {\href{http://wonks.github.io/}{PL Wonks}}
+  {\textsc{Indiana University Bloomington}} {%
+}
+
+\headedsection
+  {\href{http://prl.ccs.neu.edu/gtp/index.html}{Gradual Typing Group}}
+  {\textsc{Indiana University Bloomington}} {%
+}
+
+\roottitle{Publications}
+
+\headedsection
+  {\href{http://frenchy64.github.io/papers/esop16-short.pdf}{Practical Optional Types for Clojure}}
+  {\textsc{with Rowan Davies, Sam Tobin-Hochstadt}} {%
+    {\bodytext{Presented at European Symposium on Programming (ESOP) 2016}}
+}
+\headedsection
+  {\href{https://s3.amazonaws.com/github/downloads/frenchy64/papers/ambrose-honours.pdf}{A Practical Optional Type System for Clojure}}
+  {\textsc{supervised by Rowan Davies}} {%
+    {\bodytext{Bachelor of Computer Science Honours dissertation, University of Western Australia }}
+}
+
+\spacedhrule{1.6em}{-0.4em}
+
+\roottitle{Skills}
+
+\inlineheadsection  % special section that has an inline header with a 'hanging' paragraph
+  {Technical expertise:}
+  {Experienced with open source development and maintainence, 
+    including Git, Github, and continuous integration.
+    Enjoys building static program verification tools for dynamically typed languages.
+    Experienced Clojure programmer.
+    Some experience in Java and C.
+  }
+
+%\vspace{0.5em}
+%\inlineheadsection
+%  {Natural languages:}
+%  {Dutch \emph{(mother tongue)}, English \emph{(full professional proficiency)}, German \emph{(limited working proficiency)}, French \emph{(elementary proficiency)} and Mandarin Chinese \emph{(beginner)}.}
+%
+
+%\spacedhrule{1.6em}{-0.4em}
+
+
+\roottitle{Selected Open Source Contributions}
+\headedsection
+  {\href{https://github.com/clojure/core.typed}{core.typed}}
+  {\textsc{Lead Developer}} {%
+    {\bodytext{
+        The main library of Typed Clojure.
+      }
+    }
+}
+\headedsection
+  {\href{https://github.com/clojure/core.match}{core.match}}
+  {\href{https://github.com/clojure/core.match/commits?author=frenchy64}{\textsc{Contributor}}} {%
+    {\bodytext{
+        Studied optimising pattern matching literature and collaborated
+        on a pattern matcher for Clojure.
+      }
+    }
+}
+
+\headedsection
+  {\href{https://github.com/clojure/clojure}{Clojure}}
+  {\href{https://github.com/clojure/clojure/commits?author=frenchy64}{\textsc{Contributor}}} {%
+    {\bodytext{
+      Contributed several minor patches improving error messages,
+      fixing bugs, and adding features.
+      }
+    }
+}
+
+\roottitle{Selected Talks}
+
+\headedsection
+  {Typed Clojure: From Optional to Gradual Typing (\href{https://www.youtube.com/watch?v=yG9CffLlXx0}{Video})}
+  {\textsc{Strangeloop 2015}} {%
+}
+\headedsection
+  {Typed Clojure in Practice (\href{https://www.youtube.com/watch?v=a0gT0syAXsY}{Video})}
+  {\textsc{Strangeloop 2014}} {%
+}
+\headedsection
+  {Practical Optional Types for Clojure (\href{http://ambrosebs.com/talks/esop16.pdf}{Slides})}
+  {\textsc{ESOP 2016}} {%
+  }
+\headedsection
+  {Introduction to Logic Programming (\href{https://www.youtube.com/watch?v=irjP8BO1B8Y}{Video})}
+  {\textsc{Clojure Conj 2011}} {%
+}
+
+\roottitle{Interests}
+
+\inlineheadsection
+  {Singing, guitar, clarinet, reading, teaching.}
+
+
+\end{document}
