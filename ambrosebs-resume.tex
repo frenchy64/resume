@@ -50,13 +50,13 @@
 %USA
 
 
-\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+%\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
 
 \roottitle{Summary}  % a root section title
 
-\vspace{-1.3em}  % some vertical spacing
-\begin{multicols}{2}  % open a multicolumn environment
-\noindent 
+%\vspace{-1.3em}  % some vertical spacing
+%\begin{multicols}{2}  % open a multicolumn environment
+%\noindent 
 %\emph{Delivering tools to working programmers.}
 %\\
 I design and implement sophisticated development tools for working programmers.
@@ -65,28 +65,32 @@ I design and implement sophisticated development tools for working programmers.
 %Starting from my own aesthetics, I
 %use feedback from real developers to shape what I work on.
 %
-My main focus has been creating Typed Clojure, an optional type system for Clojure.
+%My main focus has been creating Typed Clojure, an optional type system for Clojure.
 %Since 2011, I have iterated
 %solutions to problems raised Clojure community.
 %
+Now that I am completing my
+Ph.D. thesis on Typed Clojure, % (an optional type system for Clojure.
+I'm looking apply my rigorous training and expertise
+in industry.
 
-While developed in an academic setting, Typed Clojure 
-has seen wide use in industry.
-My efforts in sustaining this have formed a solid basis for my technical skills,
-as well as opportunities to hone my communication skills through dozens of talks, 
-designing three successful crowdfunding campaigns,
-and experience in leading small teams.
+%I have used my time in academia to 
+%While developed in an academic setting, Typed Clojure 
+%has seen wide use in industry.
+%My efforts in sustaining this have formed a solid basis for my technical skills,
+%as well as opportunities to hone my communication skills through dozens of talks, 
+%designing three successful crowdfunding campaigns,
+%and experience in leading small teams.
 
-I'm looking to further apply and expand on these lessons by working with teams
-excited to craft world-class developer experiences.
+%I'm looking to further apply and expand on these lessons by working with teams
+%excited to craft world-class developer experiences.
 
 %I speak at a wide variety of industry and academic conferences, including
 %Strangeloop, Clojure/conj, Philly ETE, Lambda Jam Brisbane, Code
 %Mesh, ESOP, and the International Lisp Conference.
-\end{multicols}
+%\end{multicols}
 
-
-\spacedhrule{0em}{-0.4em}
+%\spacedhrule{0em}{0em}
 
 \roottitle{Software Development Experience}
 
@@ -103,25 +107,27 @@ excited to craft world-class developer experiences.
     \item crowdfunded over \$50,000 to support development (incl.~CircleCI, Walmart Labs, 
       %Prismatic, 
       and Cognitect)
+    \item mentored 5 Google Summer of Code students
   \end{itemize}
   }
 
 \headedsection
-  {Software Intern}
+  {Software Developer (Remote)}
   {\textsc{Sparkfund, }}
   {%
       {\textit{May 2017 --- Febuary 2018}}
       {%\bodytext{%Studied verification techniques used in practice (Clojure).
       \begin{itemize}
-        \item enhanced tooling for sales team, including
-              monthly pricing reports, and interactive pricing tools
+        \item enhanced interactive pricing estimation tools using ClojureScript and om.next
+        \item produced internal pricing reports in collaboration with sales team using Clojure and Google Sheets
         \item parallelized the CI builds of several projects with a migration to CircleCI 2.0 Workflows
         \item completed company-wide upgrade to a version of Clojure with breaking changes
         %\item 
           %and participated in daily standup, pair programming,
           %weekly 1-1's with managers,
           %and monthly planning meetings
-        \item worked remotely; used Clojure, ClojureScript, om.next, Google Sheets, Salesforce, Asana, Boot
+        %\item worked remotely
+        %\item used Clojure, ClojureScript, om.next, Google Sheets, Salesforce, Asana, Boot
       \end{itemize}
       }%}
   }
@@ -220,12 +226,12 @@ excited to craft world-class developer experiences.
 \roottitle{Other Experience}
 
 \headedsection
-  {{Student Academic Appointee}}
+  {{Research Assistant / Assistant Instructor}}
   {\textsc{Indiana University Bloomington, }} {%
     {\textit{Fall 2014---present}}
     {
     \begin{itemize}
-      \item produced papers about Typed Clojure and clojure.spec
+      \item published peer reviewed papers about Typed Clojure and clojure.spec
       \item taught undergraduates introductory programming and introductory data structures
     \end{itemize}
     }
@@ -275,12 +281,17 @@ excited to craft world-class developer experiences.
   {\href{http://www.indiana.edu}{Indiana University Bloomington}}
   {\textsc{Bloomington, Indiana}} {%
   \headedsubsection
-    {Computer Science Ph.D. (candidate)}
-    {Fall 2014 --- Spring 2019 (expected)}
+    {Ph.D. in Computer Science 
+    %(candidate)
+    }
+    {%Fall 2014 --- 
+    Spring 2019 %(expected)
+    }
     {}
   \headedsubsection
     {Master of Science in Computer Science}
-    {2014 --- 2017}
+    {%2014 ---
+    2017}
     {}
 }
 
@@ -289,7 +300,8 @@ excited to craft world-class developer experiences.
   {\textsc{Western Australia, Australia}} {%
   \headedsubsection
     {BSc in Computer Science with Honours}
-    {2008 --- 2013}
+    {%2008 ---
+    2013}
     {}
 }
 
@@ -381,30 +393,47 @@ excited to craft world-class developer experiences.
 \roottitle{Selected Talks}
 
 \headedsection
-  {Tool-assisted spec Development (\href{https://www.youtube.com/watch?v=kcZVkvO1Dpo}{Video})}
+  {\href{https://www.youtube.com/watch?v=kcZVkvO1Dpo}{Tool-assisted spec Development}}
   {\textsc{Clojure/conj 2017}} {%
 }
-%\headedsection
-%  {Typed Clojure: From Optional to Gradual Typing (\href{https://www.youtube.com/watch?v=yG9CffLlXx0}{Video})}
-%  {\textsc{Strangeloop 2015}} {%
-%}
 \headedsection
-  {Practical Optional Types for Clojure (\href{http://ambrosebs.com/talks/esop16.pdf}{Slides})}
+  {\href{http://ambrosebs.com/talks/esop16.pdf}{Practical Optional Types for Clojure}}
   {\textsc{ESOP 2016}} {%
   }
 \headedsection
-  {Typed Clojure in Practice (\href{https://www.youtube.com/watch?v=a0gT0syAXsY}{Video})}
+  {\href{https://www.youtube.com/watch?v=yG9CffLlXx0}{Typed Clojure: From Optional to Gradual Typing}}
+  {\textsc{Strangeloop 2015}} {%
+}
+\headedsection
+  {\href{https://www.youtube.com/watch?v=a0gT0syAXsY}{Typed Clojure in Practice}}
   {\textsc{Strangeloop 2014}} {%
 }
 \headedsection
-  {Introduction to Logic Programming (\href{https://www.youtube.com/watch?v=irjP8BO1B8Y}{Video})}
+  {\href{https://www.youtube.com/watch?v=a0gT0syAXsY}{Typed Clojure}}
+  {\textsc{Clojure/conj 2012}} {%
+}
+\headedsection
+  {\href{https://www.youtube.com/watch?v=irjP8BO1B8Y}{Introduction to Logic Programming}}
   {\textsc{Clojure/conj 2011}} {%
 }
 
-\roottitle{Skills}
+\roottitle{Programming languages}
 
 \bodytext
-  { Proficient in Clojure. Some experience with Java, C, Racket, Scheme, Coq, and Agda.}
+  {
+        Proficient in Clojure. Experience with Java, C, Racket, Coq, and Agda.
+        }
+
+\roottitle{Community}
+
+\bodytext
+  {
+\begin{itemize}
+  \item Google Summer of Code Administrator for Clojure (2014-2015)
+  \item organizer of \href{http://wonks.github.io}{PL Wonks}, Indiana University's weekly Programming Languages seminar
+    (2017-)
+\end{itemize}
+    }
 
 %\bodytext
 %  {Experienced with open source development and maintenance, 
@@ -415,10 +444,11 @@ excited to craft world-class developer experiences.
 %    Some experience in Java, C, Racket, and Scheme.
 %  }
 
-\roottitle{Personal}
-
-\bodytext
-  {I live in Bloomington, Indiana and have a US work permit.}
+%\roottitle{Personal}
+%
+%\bodytext
+%  {I live in Bloomington, Indiana and have a US work permit.
+%  }
 
 
 %\headedsection{Interests}
